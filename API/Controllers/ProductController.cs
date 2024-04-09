@@ -12,6 +12,8 @@ namespace API.Controllers
         {
             _repo = repo;
         }
+        #region Product
+
         [HttpGet]
         [Route("GetProducts")]
         public async Task<IActionResult> GetProductsAsync(){
@@ -20,9 +22,23 @@ namespace API.Controllers
         }
         [HttpGet]
         [Route("GetProduct")]
-        public async Task<ActionResult<dynamic>> GetProduct(int id){
+        public async Task<ActionResult> GetProduct(int id){
             var product =  await _repo.GetProductByIdAsync(id);
-            return product;
+            return Ok(product);
+        }   
+        [HttpGet]
+        [Route("GetProductTypes")]
+        public async Task<IActionResult> GetProductTypes(){
+            var productTypes =  await _repo.GetProductTypesAsync();
+            return Ok(productTypes);
         }
+        [HttpGet]
+        [Route("GetProductBrands")]
+        public async Task<IActionResult> GetProductBrands(){
+            var productBrands =  await _repo.GetProductBrandsAsync();
+            return Ok(productBrands);
+        }  
+
+        #endregion
     }
 }
