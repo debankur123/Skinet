@@ -1,25 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Skinet\\Core\\Core.csproj": {}
+    "D:\\DotNet_Projects\\Skinet\\Skinet\\Core\\Core.csproj": {}
   },
   "projects": {
-    "D:\\Skinet\\Core\\Core.csproj": {
+    "D:\\DotNet_Projects\\Skinet\\Skinet\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Skinet\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\DotNet_Projects\\Skinet\\Skinet\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "D:\\Skinet\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\bhatt\\.nuget\\packages\\",
-        "outputPath": "D:\\Skinet\\Core\\obj\\",
+        "projectPath": "D:\\DotNet_Projects\\Skinet\\Skinet\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\012173\\.nuget\\packages\\",
+        "outputPath": "D:\\DotNet_Projects\\Skinet\\Skinet\\Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\bhatt\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\012173\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,6 +37,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -53,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1757,32 +1757,38 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bhatt\\.nuget\\packages\\": {}
+    "C:\\Users\\012173\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Skinet\\API\\API.csproj",
+      "projectUniqueName": "D:\\DotNet_Projects\\Skinet\\Skinet\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\Skinet\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\bhatt\\.nuget\\packages\\",
-      "outputPath": "D:\\Skinet\\API\\obj\\",
+      "projectPath": "D:\\DotNet_Projects\\Skinet\\Skinet\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\012173\\.nuget\\packages\\",
+      "outputPath": "D:\\DotNet_Projects\\Skinet\\Skinet\\API\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\bhatt\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\012173\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Skinet\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\Skinet\\Infrastructure\\Infrastructure.csproj"
+            "D:\\DotNet_Projects\\Skinet\\Skinet\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\DotNet_Projects\\Skinet\\Skinet\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -1791,6 +1797,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1829,7 +1840,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

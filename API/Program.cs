@@ -1,8 +1,8 @@
 
 using Core.Interfaces;
 using Infrastructure.Data;
-using Infrasturucture.Data;
 using Microsoft.EntityFrameworkCore;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +12,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<StoreContext>(
+builder.Services.AddDbContext<Infrasturucture.Data.StoreContext>(
     opt => opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnectionString"))
 );
 builder.Services.AddScoped<IProductRepository,ProductRepository>();
@@ -31,5 +31,19 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+using var scope = app.Services.CreateScope();
+var services = scope.ServiceProvider;
+var context = services.GetRequiredService<Infrasturucture.Data.StoreContext>();
+var logger = services.GetRequiredService<ILogger<Program>>();
+try
+{
+    await context.Database.MigrateAsync();
+    //await Infrasturucture.Data.StoreContextSeed.StoreContextSeedAsync(context);
+}
+catch (Exception ex)
+{
+    logger.LogError(ex,"An error occurred while migrating");
+}
 
 app.Run();
