@@ -6,7 +6,6 @@ namespace Infrastructure.Data.Config
 {
     public class ProductConfiguration : IEntityTypeConfiguration<Product>
     {
-        private int stringMaxLengthForDescription = 500;
         private int stringMaxLengthForName = 150;
 
         public void Configure(EntityTypeBuilder<Product> builder)
@@ -17,7 +16,7 @@ namespace Infrastructure.Data.Config
             builder.Property(prod => prod.Description).IsRequired();
             builder.Property(prod => prod.Price).IsRequired()
                 .HasColumnType("decimal(18,2)");
-            builder.Property(prod => prod.PictureURL).IsRequired();
+            builder.Property(prod => prod.PictureURL);
             builder.HasOne(t => t.ProductBrand)
             .WithMany().HasForeignKey(x => x.ProductBrandId);
             builder.HasOne(prodtype => prodtype.ProductType).WithMany()
