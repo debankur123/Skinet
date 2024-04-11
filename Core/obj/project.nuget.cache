@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JPEILwEaZ8zhLZG5dqhqorPOY3CrQEZLjls80zg/uU6MPIDg2lkvR6CHup647bbhn4v3Yih6fBgO/pOc/jFzXQ==",
+  "dgSpecHash": "vr4hg+DGZwv5QXCgEz8zBjnKNBqcbjyn1Qb/Q+82+x6mMcM/s5M7Ze+K0WHYgfLHVhYycuK+LC3VfpM8bN+udg==",
   "success": true,
-  "projectFilePath": "D:\\DotNet_Projects\\Skinet\\Skinet\\Core\\Core.csproj",
+  "projectFilePath": "D:\\Skinet\\Skinet\\Core\\Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

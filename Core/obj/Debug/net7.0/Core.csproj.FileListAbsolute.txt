@@ -21,3 +21,14 @@ D:\DotNet_Projects\Skinet\Skinet\Core\obj\Debug\net7.0\Core.dll
 D:\DotNet_Projects\Skinet\Skinet\Core\obj\Debug\net7.0\refint\Core.dll
 D:\DotNet_Projects\Skinet\Skinet\Core\obj\Debug\net7.0\Core.pdb
 D:\DotNet_Projects\Skinet\Skinet\Core\obj\Debug\net7.0\ref\Core.dll
+D:\Skinet\Skinet\Core\bin\Debug\net7.0\Core.deps.json
+D:\Skinet\Skinet\Core\bin\Debug\net7.0\Core.dll
+D:\Skinet\Skinet\Core\bin\Debug\net7.0\Core.pdb
+D:\Skinet\Skinet\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Skinet\Skinet\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\Skinet\Skinet\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\Skinet\Skinet\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\Skinet\Skinet\Core\obj\Debug\net7.0\Core.dll
+D:\Skinet\Skinet\Core\obj\Debug\net7.0\refint\Core.dll
+D:\Skinet\Skinet\Core\obj\Debug\net7.0\Core.pdb
+D:\Skinet\Skinet\Core\obj\Debug\net7.0\ref\Core.dll
