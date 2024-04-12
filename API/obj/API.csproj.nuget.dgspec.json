@@ -1,33 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Skinet\\Skinet\\API\\API.csproj": {}
+    "D:\\Dotnet_Projects\\Skinet\\Skinet\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\Skinet\\Skinet\\API\\API.csproj": {
-      "version": "1.0.0",
+    "D:\\Dotnet_Projects\\Skinet\\Skinet\\API\\API.csproj": {
+      "version": "24.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Skinet\\Skinet\\API\\API.csproj",
+        "projectUniqueName": "D:\\Dotnet_Projects\\Skinet\\Skinet\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\Skinet\\Skinet\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\bhatt\\.nuget\\packages\\",
-        "outputPath": "D:\\Skinet\\Skinet\\API\\obj\\",
+        "projectPath": "D:\\Dotnet_Projects\\Skinet\\Skinet\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\012173\\.nuget\\packages\\",
+        "outputPath": "D:\\Dotnet_Projects\\Skinet\\Skinet\\API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\bhatt\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\012173\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Skinet\\Skinet\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\Skinet\\Skinet\\Infrastructure\\Infrastructure.csproj"
+              "D:\\Dotnet_Projects\\Skinet\\Skinet\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\Dotnet_Projects\\Skinet\\Skinet\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -36,12 +41,21 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.17, )"
@@ -74,26 +88,31 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Skinet\\Skinet\\Core\\Core.csproj": {
-      "version": "1.0.0",
+    "D:\\Dotnet_Projects\\Skinet\\Skinet\\Core\\Core.csproj": {
+      "version": "24.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Skinet\\Skinet\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\Dotnet_Projects\\Skinet\\Skinet\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "D:\\Skinet\\Skinet\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\bhatt\\.nuget\\packages\\",
-        "outputPath": "D:\\Skinet\\Skinet\\Core\\obj\\",
+        "projectPath": "D:\\Dotnet_Projects\\Skinet\\Skinet\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\012173\\.nuget\\packages\\",
+        "outputPath": "D:\\Dotnet_Projects\\Skinet\\Skinet\\Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\bhatt\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\012173\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -106,6 +125,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -127,34 +151,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Skinet\\Skinet\\Infrastructure\\Infrastructure.csproj": {
-      "version": "1.0.0",
+    "D:\\Dotnet_Projects\\Skinet\\Skinet\\Infrastructure\\Infrastructure.csproj": {
+      "version": "24.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Skinet\\Skinet\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "D:\\Dotnet_Projects\\Skinet\\Skinet\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "D:\\Skinet\\Skinet\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\bhatt\\.nuget\\packages\\",
-        "outputPath": "D:\\Skinet\\Skinet\\Infrastructure\\obj\\",
+        "projectPath": "D:\\Dotnet_Projects\\Skinet\\Skinet\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\012173\\.nuget\\packages\\",
+        "outputPath": "D:\\Dotnet_Projects\\Skinet\\Skinet\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\bhatt\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\012173\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Skinet\\Skinet\\Core\\Core.csproj": {
-                "projectPath": "D:\\Skinet\\Skinet\\Core\\Core.csproj"
+              "D:\\Dotnet_Projects\\Skinet\\Skinet\\Core\\Core.csproj": {
+                "projectPath": "D:\\Dotnet_Projects\\Skinet\\Skinet\\Core\\Core.csproj"
               }
             }
           }
@@ -163,6 +192,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -190,7 +224,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
