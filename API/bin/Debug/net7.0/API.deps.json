@@ -6,10 +6,10 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "API/24.0": {
+      "API/1.0.0": {
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "Infrastructure": "24.0.0",
+          "Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.17",
           "Microsoft.EntityFrameworkCore.Design": "7.0.17",
           "Swashbuckle.AspNetCore": "6.5.0"
@@ -420,14 +420,14 @@
           "System.Text.Encodings.Web": "7.0.0"
         }
       },
-      "Core/24.0.0": {
+      "Core/1.0.0": {
         "runtime": {
           "Core.dll": {}
         }
       },
-      "Infrastructure/24.0.0": {
+      "Infrastructure/1.0.0": {
         "dependencies": {
-          "Core": "24.0.0",
+          "Core": "1.0.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.17"
         },
         "runtime": {
@@ -437,7 +437,7 @@
     }
   },
   "libraries": {
-    "API/24.0": {
+    "API/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -708,12 +708,12 @@
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
     },
-    "Core/24.0.0": {
+    "Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Infrastructure/24.0.0": {
+    "Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

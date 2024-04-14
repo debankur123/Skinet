@@ -221,3 +221,6 @@ D:\Skinet\Skinet\API\obj\Debug\net7.0\ref\API.dll
 D:\DotNet_Projects\Skinet\Skinet\API\bin\Debug\net7.0\AutoMapper.dll
 D:\DotNet_Projects\Skinet\Skinet\API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Dotnet_Projects\Skinet\Skinet\API\bin\Debug\net7.0\API.staticwebassets.runtime.json
+D:\Skinet\Skinet\API\bin\Debug\net7.0\API.staticwebassets.runtime.json
+D:\Skinet\Skinet\API\bin\Debug\net7.0\AutoMapper.dll
+D:\Skinet\Skinet\API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

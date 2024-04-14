@@ -13,12 +13,14 @@ namespace API.Controllers
         private readonly IGenericRepository<ProductBrand> _prodBrandRepo;
         private readonly IGenericRepository<ProductType> _prodTypeRepo;
         private readonly IMapper _mapper;
-        public ProductController(IGenericRepository<Product> productsRepo,IGenericRepository<ProductType> productTypesRepo,IGenericRepository<ProductBrand> productsBrandRepo,IMapper mapper)
+        public IConfiguration Config { get; }
+        public ProductController(IGenericRepository<Product> productsRepo,IGenericRepository<ProductType> productTypesRepo,IGenericRepository<ProductBrand> productsBrandRepo,IMapper mapper,IConfiguration config)
         {
             _prodRepo      = productsRepo;
             _prodTypeRepo  = productTypesRepo;
             _prodBrandRepo = productsBrandRepo;
             _mapper        = mapper;
+            this.Config    = config;
         }
         #region Product
 
@@ -31,7 +33,7 @@ namespace API.Controllers
                 Id           = product.Id,
                 Name         = product.Name,
                 Description  = product.Description,
-                PictureURL   = product.PictureURL,
+                PictureURL   = this.Config["ApiURL"] + product.PictureURL,
                 Price        = product.Price,
                 ProductBrand = product.ProductBrand.Name,
                 ProductType  = product.ProductType.Name
