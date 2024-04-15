@@ -11,6 +11,15 @@ namespace Infrastructure.Data
             if(specs.Criteria != null){
                 query = query.Where(specs.Criteria); // This is equivalent to x => x.ProductTypeId == id
             }
+            if(specs.OrderBy != null){
+                query = query.OrderBy(specs.OrderBy);
+            }
+            if(specs.OrderByDesc != null){
+                query = query.OrderByDescending(specs.OrderByDesc);
+            }
+            if(specs.IsPagingEnabled){
+                query = query.Skip(specs.Skip).Take(specs.Take);
+            }
             query = specs.Includes.Aggregate(query,(current,include) => current.Include(include));
             return query;
         }

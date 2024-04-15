@@ -1,5 +1,6 @@
 using API.DTOS;
 using AutoMapper;
+using Core;
 using Core.Entities;
 using Core.Interfaces;
 using Core.Specifications;
@@ -26,8 +27,8 @@ namespace API.Controllers
 
         [HttpGet]
         [Route("GetProducts")]
-        public async Task<IActionResult> GetProductsAsync(){
-            var spec  = new ProductsWithTypesAndBrandSpecifications();
+        public async Task<IActionResult> GetProductsAsync([FromQuery] ProductSpecsParams _params){
+            var spec  = new ProductsWithTypesAndBrandSpecifications(_params);
             var products = await  _prodRepo.ListAsync(spec);
             return Ok(products.Select(product => new ProductDTO{
                 Id           = product.Id,
