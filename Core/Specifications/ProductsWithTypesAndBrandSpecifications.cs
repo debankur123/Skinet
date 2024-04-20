@@ -10,18 +10,21 @@ namespace Core.Specifications
             AddInclude(x => x.ProductBrand);
             AddOrderBy(o => o.Name);
             AddPagination(_params.PageSize*_params.PageIndex-1,_params.PageSize);
-            if(!string.IsNullOrEmpty(_params.Sort)){
-                switch(_params.Sort){
-                    case  "priceAsc" :
-                        AddOrderBy(x => x.Price);
-                        break;
-                    case "priceDesc" :
-                        AddOrderByDesc(y => y.Price);
-                        break;
-                    default :
-                        AddOrderBy(x => x.Name);
-                        break;
-                }
+            switch (string.IsNullOrEmpty(_params.Sort))
+            {
+                case false:
+                    switch(_params.Sort){
+                        case  "priceAsc" :
+                            AddOrderBy(x => x.Price);
+                            break;
+                        case "priceDesc" :
+                            AddOrderByDesc(y => y.Price);
+                            break;
+                        default :
+                            AddOrderBy(x => x.Name);
+                            break;
+                    }
+                    break;
             }
         }
         public ProductsWithTypesAndBrandSpecifications(int id) : base(x => x.Id == id)
