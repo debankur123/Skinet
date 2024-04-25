@@ -6,7 +6,7 @@ namespace Infrastructure.Data.Config
 {
     public class ProductConfiguration : IEntityTypeConfiguration<Product>
     {
-        private int stringMaxLengthForName = 150;
+        private const int stringMaxLengthForName = 150;
 
         public void Configure(EntityTypeBuilder<Product> builder)
         {

@@ -9,21 +9,16 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
-    public class ProductController : BaseApiController
+    public class ProductController(
+        IGenericRepository<Product> productsRepo,
+        IGenericRepository<ProductType> productTypesRepo,
+        IGenericRepository<ProductBrand> productsBrandRepo,
+        IMapper mapper,
+        IConfiguration config)
+        : BaseApiController
     {
-        private readonly IGenericRepository<Product> _prodRepo;
-        private readonly IGenericRepository<ProductBrand> _prodBrandRepo;
-        private readonly IGenericRepository<ProductType> _prodTypeRepo;
-        private readonly IMapper _mapper;
-        public IConfiguration Config { get; }
-        public ProductController(IGenericRepository<Product> productsRepo,IGenericRepository<ProductType> productTypesRepo,IGenericRepository<ProductBrand> productsBrandRepo,IMapper mapper,IConfiguration config)
-        {
-            _prodRepo      = productsRepo;
-            _prodTypeRepo  = productTypesRepo;
-            _prodBrandRepo = productsBrandRepo;
-            _mapper        = mapper;
-            this.Config    = config;
-        }
+        private IConfiguration Config { get; } = config;
+
         #region Product
 
         [HttpGet]
@@ -31,8 +26,8 @@ namespace API.Controllers
         public async Task<ActionResult<PaginationHelper<ProductDTO>>> GetProductsAsync([FromQuery] ProductSpecsParams _params){
             var spec  = new ProductsWithTypesAndBrandSpecifications(_params);
             var countSpec = new ProductWithCountAndFilterSpecification(_params);
-            var totalItems = await _prodRepo.CountProductAsync(countSpec);
-            var products = await  _prodRepo.ListAsync(spec);
+            var totalItems = await productsRepo.CountProductAsync(countSpec);
+            var products = await  productsRepo.ListAsync(spec);
             var data = products.Select(product => new ProductDTO
             {
                 Id = product.Id,
@@ -50,20 +45,20 @@ namespace API.Controllers
         [Route("GetProduct")]
         public async Task<ActionResult> GetProduct(int id){
             var spec  = new ProductsWithTypesAndBrandSpecifications(id);
-            var product =  await _prodRepo.GetEntityWithSpec(spec);
-            var data = _mapper.Map<Product, ProductDTO>(product);
+            var product =  await productsRepo.GetEntityWithSpec(spec);
+            var data = mapper.Map<Product, ProductDTO>(product);
             return Ok(data);
         }   
         [HttpGet]
         [Route("GetProductTypes")]
         public async Task<IActionResult> GetProductTypes(){
-            var productTypes =  await _prodTypeRepo.ListAllAsync();
+            var productTypes =  await productTypesRepo.ListAllAsync();
             return Ok(productTypes);
         }
         [HttpGet]
         [Route("GetProductBrands")]
         public async Task<IActionResult> GetProductBrands(){
-            var productBrands =  await _prodBrandRepo.ListAllAsync();
+            var productBrands =  await productsBrandRepo.ListAllAsync();
             return Ok(productBrands);
         }  
 

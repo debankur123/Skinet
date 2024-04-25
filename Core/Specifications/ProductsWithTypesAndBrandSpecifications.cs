@@ -4,12 +4,13 @@ namespace Core.Specifications
 {
     public class ProductsWithTypesAndBrandSpecifications : BaseSpecifications<Product>
     {
-        public ProductsWithTypesAndBrandSpecifications(ProductSpecsParams _params) : base ( x => (!_params.BrandId.HasValue || x.ProductBrandId == _params.BrandId) && (!_params.TypeId.HasValue || x.ProductTypeId == _params.TypeId))
+        public ProductsWithTypesAndBrandSpecifications(ProductSpecsParams _params) 
+            : base ( x => (string.IsNullOrEmpty(_params.Search) || x.Name.ToLower().Contains(_params.Search)) && (!_params.BrandId.HasValue || x.ProductBrandId == _params.BrandId) && (!_params.TypeId.HasValue || x.ProductTypeId == _params.TypeId))
         {
             AddInclude(x => x.ProductType);
             AddInclude(x => x.ProductBrand);
             AddOrderBy(o => o.Name);
-            AddPagination(_params.PageSize*_params.PageIndex-1,_params.PageSize);
+            AddPagination(_params.PageSize*(_params.PageIndex-1),_params.PageSize);
             switch (string.IsNullOrEmpty(_params.Sort))
             {
                 case false:
