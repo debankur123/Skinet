@@ -5,6 +5,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{D34F178D-E830-4131-84CA-BE0033EE94EB}|API\\API.csproj|d:\\skinet\\skinet\\api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D34F178D-E830-4131-84CA-BE0033EE94EB}|API\\API.csproj|solutionrelative:api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D34F178D-E830-4131-84CA-BE0033EE94EB}|API\\API.csproj|d:\\skinet\\skinet\\api\\helper\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D34F178D-E830-4131-84CA-BE0033EE94EB}|API\\API.csproj|solutionrelative:api\\helper\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D34F178D-E830-4131-84CA-BE0033EE94EB}|API\\API.csproj|d:\\skinet\\skinet\\api\\helper\\producturlresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D34F178D-E830-4131-84CA-BE0033EE94EB}|API\\API.csproj|solutionrelative:api\\helper\\producturlresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6DFF3B0-4210-41BE-8076-64F753E49A52}|Core\\Core.csproj|d:\\skinet\\skinet\\core\\specifications\\productswithtypesandbrandspecifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6DFF3B0-4210-41BE-8076-64F753E49A52}|Core\\Core.csproj|solutionrelative:core\\specifications\\productswithtypesandbrandspecifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D34F178D-E830-4131-84CA-BE0033EE94EB}|API\\API.csproj|d:\\skinet\\skinet\\api\\extensions\\apiserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D34F178D-E830-4131-84CA-BE0033EE94EB}|API\\API.csproj|solutionrelative:api\\extensions\\apiserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +30,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApiServiceExtensions.cs",
+              "DocumentMoniker": "D:\\Skinet\\Skinet\\API\\Extensions\\ApiServiceExtensions.cs",
+              "RelativeDocumentMoniker": "API\\Extensions\\ApiServiceExtensions.cs",
+              "ToolTip": "D:\\Skinet\\Skinet\\API\\Extensions\\ApiServiceExtensions.cs",
+              "RelativeToolTip": "API\\Extensions\\ApiServiceExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T08:35:56.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductsWithTypesAndBrandSpecifications.cs",
+              "DocumentMoniker": "D:\\Skinet\\Skinet\\Core\\Specifications\\ProductsWithTypesAndBrandSpecifications.cs",
+              "RelativeDocumentMoniker": "Core\\Specifications\\ProductsWithTypesAndBrandSpecifications.cs",
+              "ToolTip": "D:\\Skinet\\Skinet\\Core\\Specifications\\ProductsWithTypesAndBrandSpecifications.cs",
+              "RelativeToolTip": "Core\\Specifications\\ProductsWithTypesAndBrandSpecifications.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T16:15:41.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductURLResolver.cs",
+              "DocumentMoniker": "D:\\Skinet\\Skinet\\API\\Helper\\ProductURLResolver.cs",
+              "RelativeDocumentMoniker": "API\\Helper\\ProductURLResolver.cs",
+              "ToolTip": "D:\\Skinet\\Skinet\\API\\Helper\\ProductURLResolver.cs",
+              "RelativeToolTip": "API\\Helper\\ProductURLResolver.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T16:15:25.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MappingProfiles.cs",
+              "DocumentMoniker": "D:\\Skinet\\Skinet\\API\\Helper\\MappingProfiles.cs",
+              "RelativeDocumentMoniker": "API\\Helper\\MappingProfiles.cs",
+              "ToolTip": "D:\\Skinet\\Skinet\\API\\Helper\\MappingProfiles.cs",
+              "RelativeToolTip": "API\\Helper\\MappingProfiles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAQwAoAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T16:14:45.184Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +88,7 @@
               "RelativeDocumentMoniker": "API\\Controllers\\ProductController.cs",
               "ToolTip": "D:\\Skinet\\Skinet\\API\\Controllers\\ProductController.cs",
               "RelativeToolTip": "API\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAIwDEAAAAcAAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAAADgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-25T16:03:50.024Z",
               "EditorCaption": ""
